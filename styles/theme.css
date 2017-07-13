@@ -1,9 +1,14 @@
-#fixed_header {
-  text-align: center;
+
+.clearfix::after {
+  content: "";
   color: white;
-  background-image: url("../images/header.jpg");
+  display: table;
+  clear: both;
+  text-align: center;
 }
 
-/*body {
-  background-image: url("../images/bwboxer.jpg");
-}*/
+section {
+  display: block;
+  text-align: center;
+  background-color: hsla(270, 100%, 100%, 0.7);
+}
