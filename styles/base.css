@@ -2,6 +2,9 @@ body {
   color: white;
   width: 100%;
   margin: 1em auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/bwboxer.jpg");
 }
 
 img {
@@ -9,7 +12,9 @@ img {
 }
 
 nav {
-  background-color: silver;
+  display: flex;
+
+  max-width: 70%;
 }
 
 h1 {
