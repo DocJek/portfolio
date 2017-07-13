@@ -1,5 +1,17 @@
 #fixed_header {
   position: fixed;
   text-align: center;
-  width: 100%
+  width: 100%;
+}
+
+li {
+  display: inline-block;
+}
+
+#contactMenu {
+  display: block;
+}
+
+a {
+  text-decoration: none;
 }
