@@ -1,20 +1,17 @@
-
-
-ul {
-  list-style: none;
+#fixed_header {
+  position: fixed;
+  text-align: center;
+  width: 100%;
 }
 
 li {
   display: inline-block;
 }
 
-#contactMenu ul li {
-  position: fixed;
-  display: none;
+#contactMenu {
+  display: block;
 }
 
-#contactMenu:hover ul li{
-  font-size: 1.5em;
-  position: relative;
-  display: block;
+a {
+  text-decoration: none;
 }
