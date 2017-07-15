@@ -9,10 +9,10 @@ function Project(title, img, link, caption) {
 
 // responsible for rendering projects to webpage
 Project.prototype.renderHtml = function() {
-  var $templateString = $('#handlebarsTemplate').html();
-  var compiled = Handlebars.compile($templateString);
-  var html = compiled(this);
-  $('#projects').append(html);
+  var $templateStr = $('#handlebarsTemplate').html();
+  var compiledString = Handlebars.compile($templateStr);
+  var printToDom = compiled(this);
+  $('#projects').append(printToDom);
 };
 
 var projectList = [
