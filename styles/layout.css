@@ -1,4 +1,7 @@
-
+header {
+  padding: .1em .1em .1em 1em;
+  float: none;
+}
 
 ul {
   list-style: none;
@@ -8,13 +11,43 @@ li {
   display: inline-block;
 }
 
-#contactMenu ul li {
+#hamburger {
+  display: block;
+}
+
+#hamburger:hover .navbar {
+  display: block;
+}
+
+.navbar {
+  display: none;
+}
+
+#contactMenu li {
   position: fixed;
   display: none;
 }
 
-#contactMenu:hover ul li{
+#contactMenu:hover li{
   font-size: 1.5em;
   position: relative;
   display: block;
+}
+
+#about li {
+  display: block;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    padding: .1em .1em .1em 1em;
+    float: none;
+  }
+  #hamburger {
+    display: none;
+  }
+  .navbar {
+    display: inline-block;
+  }
+
 }

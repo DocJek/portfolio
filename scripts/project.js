@@ -14,7 +14,3 @@ Project.prototype.renderHtml = function() {
   var printToDom = compiled(this);
   $('#projects').append(printToDom);
 };
-
-var projectList = [
-  new Project('BusMall', 'busmall.png', 'https://docjek.github.io/busmall', 'Focus Group Data Collecting App'),
-];
