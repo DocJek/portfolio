@@ -11,20 +11,35 @@ li {
   display: inline-block;
 }
 
-#hamburger {
-  display: block;
-}
-
-#hamburger:hover .navbar {
-  display: block;
+.icon-menu {
+  font-size: 2em;
+  float: left;
+  margin-left: 0.5em;
 }
 
 .navbar {
+  padding: 0.2em;
+}
+
+.navbar ul {
   display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.navbar:hover ul {
+  display: block;
+}
+
+.navbar li {
+  margin-right: .4em;
+  font-size: 1.3em;
+  padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
 }
 
 #contactMenu li {
-  position: fixed;
   display: none;
 }
 
@@ -43,11 +58,22 @@ li {
     padding: .1em .1em .1em 1em;
     float: none;
   }
-  #hamburger {
+  .icon-menu {
     display: none;
   }
   .navbar {
-    display: inline-block;
+    position: static;
+    padding: .2em .2em .2em 2em;
   }
-
+  .navbar ul {
+    position: inherit;
+    display: block;
+  }
+  .navbar ul li {
+    display: inline-block;
+    border-bottom: none;
+  }
+  .navbar #contactMenu {
+    position: relative;
+  }
 }

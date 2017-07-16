@@ -1,7 +1,7 @@
-img {
-  max-width: 100%;
+body {
+  margin: 1em auto;
 }
 
-.navbar {
-  max-width: 50%;
+img {
+  max-width: 100%;
 }
