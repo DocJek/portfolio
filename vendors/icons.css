@@ -24,8 +24,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-image:before {
-  content: "\e90d";
+.icon-github:before {
+  content: "\eab0";
 }
 .icon-envelop:before {
   content: "\e945";

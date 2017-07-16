@@ -1,4 +1,7 @@
-
+header {
+  padding: .1em .1em .1em 1em;
+  float: none;
+}
 
 ul {
   list-style: none;
@@ -8,13 +11,69 @@ li {
   display: inline-block;
 }
 
-#contactMenu ul li {
-  position: fixed;
+.icon-menu {
+  font-size: 2em;
+  float: left;
+  margin-left: 0.5em;
+}
+
+.navbar {
+  padding: 0.2em;
+}
+
+.navbar ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.navbar:hover ul {
+  display: block;
+}
+
+.navbar li {
+  margin-right: .4em;
+  font-size: 1.3em;
+  padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
+}
+
+#contactMenu li {
   display: none;
 }
 
-#contactMenu:hover ul li{
+#contactMenu:hover li{
   font-size: 1.5em;
   position: relative;
   display: block;
+}
+
+#about li {
+  display: block;
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    padding: .1em .1em .1em 1em;
+    float: none;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .navbar {
+    position: static;
+    padding: .2em .2em .2em 2em;
+  }
+  .navbar ul {
+    position: inherit;
+    display: block;
+  }
+  .navbar ul li {
+    display: inline-block;
+    border-bottom: none;
+  }
+  .navbar #contactMenu {
+    position: relative;
+  }
 }
