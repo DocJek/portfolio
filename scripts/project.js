@@ -1,5 +1,7 @@
 'use strict';
 
+var projects = [];
+
 function Project(projectData) {
   this.title = projectData.title;
   this.img = 'images/' + projectData.img,
@@ -7,7 +9,22 @@ function Project(projectData) {
   this.caption = projectData.caption;
 }
 
-// responsible for rendering projects to webpage
-Project.prototype.renderHtml = function() {
-  var $newProject = $(project.template).clone();
-}
+// responsible for transferring project data to html
+Project.prototype.xferToHtml = function() {
+  var $newProject = $('article.projects').clone();
+  $newProject.removeClass('projects');
+  $newProject.find('h1', this.title);
+  $newProject.find('a').attr('href', this.link);
+  $newProject.find('img').attr('src', this.img);
+  $newProject.find('caption', this.caption);
+  $newProject.append('<hr>');
+  return $newProject;
+};
+
+projectData.forEach(function(projectObj) {
+  projects.push(new Project(projectObj));
+});
+
+projects.forEach(function(project) {
+  $('#projects').append(project.toHtml());
+});
