@@ -10,13 +10,13 @@ function Project(projectData) {
 }
 
 // responsible for transferring project data to html
-Project.prototype.xferToHtml = function() {
+Project.prototype.toHtml = function() {
   var $newProject = $('article.projects').clone();
   $newProject.removeClass('projects');
-  $newProject.find('h1', this.title);
+  $newProject.find('h1').text(this.title);
   $newProject.find('a').attr('href', this.link);
   $newProject.find('img').attr('src', this.img);
-  $newProject.find('caption', this.caption);
+  $newProject.find('caption').text(this.caption);
   $newProject.append('<hr>');
   return $newProject;
 };
@@ -26,5 +26,5 @@ projectData.forEach(function(projectObj) {
 });
 
 projects.forEach(function(project) {
-  $('#projects').append(project.toHtml());
+  $('#test').append(project.toHtml());
 });
