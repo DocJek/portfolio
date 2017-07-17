@@ -14,9 +14,9 @@ Project.prototype.toHtml = function() {
   var $newProject = $('article.projects').clone();
   $newProject.removeClass('projects');
   $newProject.find('h1').text(this.title);
-  $newProject.find('a').attr('href', this.link);
+  $newProject.find('a').attr('href', this.link).attr('target', '_blank');
   $newProject.find('img').attr('src', this.img);
-  $newProject.find('caption').text(this.caption);
+  $newProject.find('footer').text(this.caption);
   $newProject.append('<hr>');
   return $newProject;
 };
