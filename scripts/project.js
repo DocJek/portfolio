@@ -28,3 +28,24 @@ projectData.forEach(function(projectObj) {
 projects.forEach(function(project) {
   $('#test').append(project.toHtml());
 });
+
+Project.all = [];
+
+Project.loadAll = function() {
+  projectData.forEach(function(element) {
+    Project.all.push(new Project(element));
+  });
+};
+
+Project.fetchAll = function() {
+  if (localStorage.projectData) {
+    var lsproj = JSON.parse(localStorage.projectData);
+    Project.loadAll(lsproj);
+
+  } else {
+    $.getJSON('data/projectData.json').then(function (data) {
+      localStorage.setItem('projectData', JSON.stringify(data));
+      Project.fetchAll();
+    });
+  }
+};
