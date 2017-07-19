@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/DocJek/portfolio/issues"
   },
-  "homepage": "https://github.com/DocJek/portfolio#readme"
+  "homepage": "https://github.com/DocJek/portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
 }
