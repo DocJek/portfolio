@@ -1,5 +1,10 @@
 'use strict';
 
 const express = require('express');
-const bodyParser = require('body-parser').urlencoded({extended: true});
 const PORT = process.env.PORT || 3000;
+const app = express();
+app.use(express.static('./portfolio'));
+
+app.listen(PORT, function() {
+  console.log('Listening on port: ' + PORT);
+});
