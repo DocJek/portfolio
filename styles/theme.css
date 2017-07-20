@@ -8,6 +8,10 @@
   background-color: silver;
 }
 
+a img {
+  border-style: outset;
+}
+
 section {
   display: block;
   text-align: center;

@@ -76,4 +76,9 @@ li {
   .navbar #contactMenu {
     position: relative;
   }
+  .thumb {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
