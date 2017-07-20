@@ -3,6 +3,14 @@ header {
   float: none;
 }
 
+header h1 {
+  font-size: 3em;
+}
+
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
