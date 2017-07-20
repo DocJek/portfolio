@@ -9,6 +9,7 @@ header h1 {
 
 a {
   text-decoration: none;
+  color: grey;
 }
 
 ul {
@@ -30,14 +31,11 @@ li {
 }
 
 .navbar ul {
+  color: grey;
   display: none;
   padding: 0;
   list-style: none;
   clear: both;
-}
-
-.navbar:hover ul {
-  display: block;
 }
 
 .navbar li {
@@ -49,12 +47,6 @@ li {
 
 #contactMenu li {
   display: none;
-}
-
-#contactMenu:hover li{
-  font-size: 1.5em;
-  position: relative;
-  display: block;
 }
 
 #about li {
