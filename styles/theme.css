@@ -1,6 +1,5 @@
 .clearfix {
   content: "";
-  color: black;
   display: table;
   margin-left: auto;
   margin-right: auto;
@@ -9,7 +8,8 @@
 }
 
 body {
-  background-color: white;
+  color: yellow;
+  background-color: black;
 }
 
 a img {
@@ -19,5 +19,4 @@ a img {
 section {
   display: block;
   text-align: center;
-  background-color: hsla(270, 100%, 100%, 0.7);
 }

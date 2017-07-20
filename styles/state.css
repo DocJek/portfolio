@@ -3,5 +3,16 @@ a img:active {
 }
 
 a:active {
-  color: grey;
+  color: yellow;
+}
+
+#contactMenu:hover li{
+  color: yellow;
+  font-size: 1.5em;
+  position: relative;
+  display: block;
+}
+
+.navbar:hover ul {
+  display: block;
 }
