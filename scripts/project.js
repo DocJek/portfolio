@@ -9,16 +9,11 @@ function Project(projectData) {
   this.caption = projectData.caption;
 }
 
-// responsible for transferring project data to html
+// responsible for transferring project data to html via Handlebars
 Project.prototype.toHtml = function() {
-  var $newProject = $('article.projects').clone();
-  $newProject.removeClass('projects');
-  $newProject.find('h1').text(this.title);
-  $newProject.find('a').attr('href', this.link).attr('target', '_blank');
-  $newProject.find('img').attr('src', this.img);
-  $newProject.find('footer').text(this.caption);
-  $newProject.append('<hr>');
-  return $newProject;
+  var $newProject = $('#handlebarsTemplate').html();
+  var compiled = Handlebars.compile($newProject);
+  return compiled(this);
 };
 
 projectData.forEach(function(projectObj) {
