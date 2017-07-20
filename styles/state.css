@@ -1,0 +1,7 @@
+a img:active {
+  border-style: inset;
+}
+
+a:active {
+  color: grey;
+}

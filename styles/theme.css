@@ -1,11 +1,19 @@
-
 .clearfix {
   content: "";
-  color: blue;
+  color: black;
   display: table;
+  margin-left: auto;
+  margin-right: auto;
   clear: both;
   text-align: center;
-  background-color: silver;
+}
+
+body {
+  background-color: white;
+}
+
+a img {
+  border-style: outset;
 }
 
 section {

@@ -26,5 +26,5 @@ projectData.forEach(function(projectObj) {
 });
 
 projects.forEach(function(project) {
-  $('#test').append(project.toHtml());
+  $('#projects').append(project.toHtml());
 });
