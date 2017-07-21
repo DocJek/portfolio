@@ -9,7 +9,7 @@ function Project(projectData) {
   this.caption = projectData.caption;
 }
 
-// responsible for transferring project data to html via Handlebars
+// responsible for transferring project data to html via Handlebars.
 Project.prototype.toHtml = function() {
   var $newProject = $('#handlebarsTemplate').html();
   var compiled = Handlebars.compile($newProject);
