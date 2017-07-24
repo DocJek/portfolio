@@ -18,7 +18,7 @@
     $('#projects').append(html);
   };
 
-  projectData.forEach(function(projectObj) {
+  projectData.map(function(projectObj) {
     projects.push(new Project(projectObj));
   });
 
