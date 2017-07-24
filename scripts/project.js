@@ -13,7 +13,8 @@ function Project(projectData) {
 Project.prototype.toHtml = function() {
   var $newProject = $('#handlebarsTemplate').html();
   var compiled = Handlebars.compile($newProject);
-  return compiled(this);
+  var html = compiled(this);
+  $('#projects').append(html);
 };
 
 projectData.forEach(function(projectObj) {
