@@ -22,8 +22,9 @@
     projects.push(new Project(projectObj));
   });
 
-  projects.forEach(function(project) {
+  projects.map(function(project) {
     $('#projects').append(project.toHtml());
   });
+
   module.Project = Project;
 })();
