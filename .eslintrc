@@ -5,8 +5,7 @@
     "Handlebars": true,
     "page": true,
     "$": true,
-    "marked": true,
-    "hljs": true
+    "projectData": true,
   },
   "extends": "eslint:recommended",
   "parserOptions": {

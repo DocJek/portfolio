@@ -6,7 +6,7 @@ var app = app || {};
 
   aboutController.initializePage = function (){
     $('.tab-content').hide();
-    $('#about').show();
+    $('#about').fadeIn(1000);
   };
 
   module.aboutController = aboutController;

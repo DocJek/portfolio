@@ -5,7 +5,7 @@ var app = app || {};
   const homeController = {};
 
   homeController.initializePage = function (){
-    $('.tabContent').show();
+    $('.tabContent').fadeIn(1000);
   };
 
   module.homeController = homeController;
