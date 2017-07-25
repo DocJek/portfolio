@@ -22,9 +22,11 @@
     projects.push(new Project(projectObj));
   });
 
+
   projects.map(function(project) {
     $('#projects').append(project.toHtml());
   });
 
   module.Project = Project;
 })();
+
