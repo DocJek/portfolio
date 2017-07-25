@@ -11,39 +11,51 @@
     <link rel="stylesheet" type="text/css" href="styles/state.css">
     <link rel="stylesheet" type="text/css" href="styles/theme.css">
     <title>Roscoe's Portfolio</title>
+
+    <!-- Handlebars template -->
+    <script type="text/x-handlebars-template" id="handlebarsTemplate">
+      <article class="projects">
+        <h1>{{title}}</h1>
+        <div class="thumb">
+          <a class="link" href="{{link}}"><img class="img" src="{{img}}"></img></a>
+        </div>
+        <footer>{{caption}}</footer>
+        <hr>
+      </article>
+    </script>
+
   </head>
   <body>
     <header class="clearfix" id="fixed_header">
       <h1>Roscoe's Portfolio</h1>
     </header>
-    <div id="navLine">
+    <div>
       <nav class="navbar clearfix">
         <div class="icon-menu"></div>
         <ul>
           <li id="contactMenu">Contact
             <ul>
               <li><a href="https://github.com/DocJek" target="_blank" class="icon-github"></a></li>
-              <li><a href="https://www.linkedin.com/in/roscoe-bass-7ba2556b?trk=prof-samename-name" target="_blank" class="icon-linkedin"></a></li>
+              <li><a href="https://www.linkedin.com/in/roscoebass" target="_blank" class="icon-linkedin"></a></li>
               <li><a href="https://www.facebook.com/DocJek" target="_blank" class="icon-facebook2"></a></li>
               <li><a href="https://www.instagram.com/docjek/" target="_blank" class="icon-instagram"></a></li>
               <li><a href="mailto:youremailaddress" class="icon-envelop"></a></li>
             </ul>
           </li>
+          <li class="tab" data-content="projects"><a href="#">Projects</a></li>
           <li class="tab" data-content="about"><a href="#" >About</a></li>
-          <li class="tab" data-content="projects"><a href="index.html">Back To Top</a></li>
         </ul>
       </nav>
     </div>
+    <hr>
+
     <!-- projects section -->
-    <section id="test" class="content">
-      <article class="projects" >
-        <h1>Title</h1>
-        <a class="link" href="somelink.com"><img class="img" src=""></img></a>
-        <footer>insert clever caption here</footer>
-      </article>
+    <section id="projects" class="tabContent">
+      <!-- new projects append here -->
     </section>
+
     <!-- about section -->
-    <section id="about" class="tab-content">
+    <section id="about" class="tabContent">
       <header>
         A Bit About Me
       </header>
@@ -58,11 +70,12 @@
     <script
 		  src="https://code.jquery.com/jquery-3.2.1.min.js"
 		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-		  crossorigin="anonymous"></script>
+		  crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js">
+    </script>
     <script src="scripts/projectData.js" type="text/javascript"></script>
     <script src="scripts/project.js" type="text/javascript"></script>
-    <script>
-      Project.fetchAll();
-    </script>
+    <script src="scripts/projectView.js" type="text/javascript"></script>
   </body>
 </html>

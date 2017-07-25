@@ -2,6 +2,10 @@ body {
   margin: 1em auto;
 }
 
+.thumb {
+  max-width: 50%;
+}
+
 img {
   max-width: 100%;
 }
