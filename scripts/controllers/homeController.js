@@ -2,11 +2,10 @@
 var app = app || {};
 
 (function(module) {
-  const homeController = {};
-
-  homeController.initializePage = function (){
+  module.homeController= function (){
+    $('section').hide();
     $('.tabContent').fadeIn(1000);
   };
 
-  module.homeController = homeController;
+
 })(app);
