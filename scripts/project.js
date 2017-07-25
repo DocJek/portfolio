@@ -17,6 +17,20 @@ Project.prototype.toHtml = function() {
   $('#projects').append(html);
 };
 
+Project.loadAll = load => {
+  Project.all = load.map(element => new Project(element));
+}
+
+Project.fetchAll = callback => {
+  $.get('/projects')
+    .then(
+      result => {
+        Project.loadAll(result);
+        callback();
+      }
+    )
+};
+
 projectData.forEach(function(projectObj) {
   projects.push(new Project(projectObj));
 });

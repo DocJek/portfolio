@@ -2,7 +2,13 @@
 
 var app = app || {};
 
-function(module) {
+(function (module){
   const projectController = {};
-  projectController.initializePage = function ()
-}
+  projectController.initializePage = function () {
+    $('.tabContent').hide();
+    $('#projects').fadeIn(1000);
+  }
+  app.Project.fetchAll();
+
+  module.projectController = projectController;
+})(app);

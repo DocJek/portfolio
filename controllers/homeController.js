@@ -5,8 +5,7 @@ var app = app || {};
   const homeController = {};
 
   homeController.initializePage = function (){
-    $('#projects').show();
-    $('#about').show();
+    $('.tabContent').show();
   };
 
   module.homeController = homeController;
