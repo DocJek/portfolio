@@ -1,4 +1,13 @@
 {
+"globals" : {
+    "rawData": true,
+    "app": true,
+    "Handlebars": true,
+    "page": true,
+    "$": true,
+    "marked": true,
+    "hljs": true
+  },
   "extends": "eslint:recommended",
   "parserOptions": {
     "ecmaVersion": 6,
