@@ -24,6 +24,16 @@
       </article>
     </script>
 
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank">
+          <h3>{{name}}</h3>
+        </a>
+        <p>Description: {{description}}</p>
+        <p>Created: {{created}}</p>
+      </li>
+    </script>
+
   </head>
   <body>
     <header class="clearfix" id="fixed_header">
@@ -83,6 +93,7 @@
     <script src="scripts/views/projectView.js" type="text/javascript"></script>
     <script src="scripts/controllers/projectController.js" type="text/javascript"></script>
     <script src="scripts/models/repoPull.js"></script>
+    <script src="scripts/views/repoView.js"></script>
     <script src="scripts/controllers/aboutController.js" type="text/javascript"></script>
     <script src="scripts/controllers/homeController.js" type="text/javascript"></script>
     <script src="scripts/controllers/routes.js" type="text/javascript"></script>
