@@ -12,5 +12,5 @@ projectView.handleNavBar = function() {
 }
 
 $(document).ready(function() {
-  projectView.handleNavBar();
+  // projectView.handleNavBar();
 });
