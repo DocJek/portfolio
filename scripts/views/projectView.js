@@ -10,7 +10,3 @@ projectView.handleNavBar = function() {
   });
   $('.navbar .tab:first').click()
 }
-
-$(document).ready(function() {
-  // projectView.handleNavBar();
-});
