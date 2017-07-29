@@ -8,12 +8,14 @@ var app = app || {};
     $('#about').fadeIn(1000);
   };
 
-  let render = Handlebars.compile($('#repo-template').html());
-  repoView.index = function() {
-    ui();
+  module.displayRepos = function () {
+    let render = Handlebars.compile($('#repo-template').html());
+    repoView.index = function() {
+      ui();
 
-    $('#about ul').append(app.repos.all.map(render));
-  };
+      $('#about ul').append(app.repos.all.map(render));
+    };
+  }
 
   module.repoView = repoView;
 })(app);
