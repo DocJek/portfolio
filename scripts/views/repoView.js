@@ -4,18 +4,18 @@ var app = app || {};
 (function(module) {
   const repoView = {};
   const ui = function() {
-    $('.tabContent').hide();
-    $('#about').fadeIn(1000);
+    let $about = $('#about');
+
+    $about.find('ul').empty();
+    $about.show().siblings().hide();
   };
 
-  module.displayRepos = function () {
-    let render = Handlebars.compile($('#repo-template').html());
-    repoView.index = function() {
-      ui();
+  let render = Handlebars.compile($('#repo-template').html());
+  repoView.index = function() {
+    ui();
 
-      $('#about ul').append(app.repos.all.map(render));
-    };
-  }
+    $('#about ul').append(app.repos.all.map(render));
+  };
 
   module.repoView = repoView;
 })(app);
