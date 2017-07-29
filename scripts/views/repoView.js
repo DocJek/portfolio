@@ -4,10 +4,8 @@ var app = app || {};
 (function(module) {
   const repoView = {};
   const ui = function() {
-    let $about = $('#about');
-
-    $about.find('ul').empty();
-    $about.show().siblings().hide();
+    $('.tabContent').hide();
+    $('#about').fadeIn(1000);
   };
 
   let render = Handlebars.compile($('#repo-template').html());
