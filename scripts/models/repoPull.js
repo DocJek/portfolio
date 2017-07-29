@@ -23,7 +23,7 @@ var app = app || {};
             description: repo.description,
             created: repo.created_at,
           }));
-          callback(repos.all);
+          callback();
         }
       );
   };

@@ -14,9 +14,7 @@ var app = app || {};
   repoView.index = function() {
     ui();
 
-    $('#about ul').append(
-      app.repos.with('name').map(render)
-    );
+    $('#about ul').append(app.repos.all.map(render));
   };
 
   module.repoView = repoView;

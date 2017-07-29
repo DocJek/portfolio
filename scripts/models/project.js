@@ -30,4 +30,4 @@ var app = app || {};
   });
 
   module.Project = Project;
-})();
+})(app);
