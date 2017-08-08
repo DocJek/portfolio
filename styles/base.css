@@ -1,23 +1,7 @@
 body {
-  color: white;
-  width: 100%;
   margin: 1em auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../images/bwboxer.jpg");
 }
 
 img {
   max-width: 100%;
-}
-
-nav {
-  display: flex;
-
-  max-width: 70%;
-}
-
-h1 {
-  height: 25%;
-  width: 100%;
 }
